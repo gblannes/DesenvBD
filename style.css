@@ -1,3 +1,15 @@
+/* Estilos Globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que padding e border não afetem o tamanho dos elementos */
+}
+
+body {
+  overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
+  font-family: Arial, sans-serif; /* Fonte legível para todo o site */
+}
+
 
 /* CSS do BootStrap*/
 .navbar-nav .nav-link {
@@ -12,3 +24,96 @@
   margin-left: 0; /* Ajuste o valor conforme necessário */
   padding-left: 100px; /* Aumenta o espaço interno à esquerda */
 }
+
+/* Estilos base */
+#carrosel {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Ocupa 100% da altura da tela */
+  background-image: url('src/Fundo.jpeg');
+  background-size: cover;  /* Faz a imagem preencher toda a área sem esticar */
+  background-position: center center; /* Centraliza a imagem horizontal e verticalmente */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+#carrosel::before {
+  content: ''; /* Cria o pseudo-elemento */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Garante que a película cubra toda a div */
+  background-color: rgba(0, 0, 0, 0.5); /* Película cinza com opacidade */
+  z-index: 1; /* Garante que o pseudo-elemento fique acima da imagem */
+}
+
+#carrosel-content {
+  position: relative;
+  z-index: 2; /* Garante que o conteúdo fique acima da película */
+  color: white;
+  text-align: center;
+}
+
+/* Seção Sobre */
+#sobre {
+  background-color: #09509E;
+  min-height: 100vh; /* Garante que ocupe a tela inteira */
+  display: flex;
+  flex-direction: row; /* Alinha as divs lado a lado */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#fundoTexto, #crianca {
+  background-color: black;
+  min-height: 400px; /* Altura mínima para manter consistência */
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  text-align: center; /* Centraliza o texto dentro da div */
+  box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+  border-radius: 10px; /* Um leve arredondamento para suavizar */
+
+  border-style: solid;
+  margin: 0px; /* Espaçamento entre as divs */
+}
+
+#fundoTexto {
+  background-color: black;
+  border-color: white;
+}
+
+.textoSobre {
+  font-family: "Poppins", sans-serif;
+}
+
+#crianca {
+  background-image: url(src/image.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 135%;
+  background-color: #333; /* Ajuste de cor para diferenciação */
+}
+
+
+#menu {
+  background-color: whitesmoke;
+  min-height: 100vh; /* Garante que ocupe a tela inteira */
+  display: flex;
+  flex-direction: row; /* Alinha as divs lado a lado */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+h3{
+  font-size: 20px;
+}
+/* Media Queries para dispositivos menores */
+
+/* Para tablets e telas menores que 1024px */
