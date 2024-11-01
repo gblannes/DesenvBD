@@ -1,0 +1,14 @@
+
+/* CSS do BootStrap*/
+.navbar-nav .nav-link {
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke; /* Usando a cor de ênfase do Bootstrap */
+}
+.dropdown-menu {
+  color: grey; /* Usando a cor de ênfase nas opções do dropdown */
+}
+
+.navbar-brand {
+  margin-left: 0; /* Ajuste o valor conforme necessário */
+  padding-left: 100px; /* Aumenta o espaço interno à esquerda */
+}
