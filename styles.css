@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +20,7 @@ body {
 }
 
 .itens a:hover {
-  color:whitesmoke;
+  color:#ddd;
   transition: 0.5s;
 }
 
@@ -60,34 +61,48 @@ body {
 }
 
 /* tabela*/
+
 .container {
   width: 80%;
   margin: 50px auto;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .tabela{
   overflow-x: auto;
 }
 h2 {
   margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
+  border-radius: 10px; /* Arredondar as bordas da tabela */
+  overflow: hidden; /* Esconde bordas arredondadas */
 }
 
 th, td {
-  border: 1px solid #ccc;
+  border: none;
   padding: 10px;
+  font-family:"Poppins", sans-serif;
   text-align: center;
 }
 
 th {
-  background-color: #f4f4f4;
+  background-color:white;
 }
+
+tr{
+  background-color: white;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
 
 form {
   display: flex;
@@ -105,9 +120,3 @@ button {
 }
 
 /*Página Crianças*/
-
-h1{}
-
-.botao{
-  
-}
