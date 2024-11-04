@@ -11,12 +11,17 @@ document.addEventListener("DOMContentLoaded", function () {
             const cpf = document.getElementById("cpf").value;
             const rg = document.getElementById("rg").value;
             const birthdate = document.getElementById("nasc").value;
+            const responsavel = document.getElementById("nomeResp").value;
+            const pais = document.getElementById("pais").value;
+            const escola = document.getElementById("escola").value;
+            const anoEscolar = document.getElementById("anoEscolar").value;
+            const turno = document.getElementById("turno").value;
 
             // Obter os dados armazenados ou criar um array vazio
             let children = JSON.parse(localStorage.getItem("children")) || [];
             
             // Adicionar a nova criança ao array
-            children.push({ name, cpf, rg, birthdate });
+            children.push({ name, cpf, rg, birthdate,responsavel,pais,escola,anoEscolar,turno });
             
             // Salvar o array atualizado no Local Storage
             localStorage.setItem("children", JSON.stringify(children));
@@ -49,10 +54,30 @@ document.addEventListener("DOMContentLoaded", function () {
             const rgCell = document.createElement("td");
             rgCell.textContent = child.rg;
 
+            const responsavelCell = document.createElement("td");
+            responsavelCell.textContent = child.responsavel;
+
+            const paisCell = document.createElement("td");
+            paisCell.textContent = child.pais;
+
+            const escolaCell = document.createElement("td");
+            escolaCell.textContent = child.escola;
+
+            const anoEscolarCell = document.createElement("td");
+            anoEscolarCell.textContent = child.anoEscolar;
+
+            const turnoCell = document.createElement("td");
+            turnoCell.textContent = child.turno;
+
             newRow.appendChild(nameCell);
             newRow.appendChild(birthdateCell);
             newRow.appendChild(cpfCell);
             newRow.appendChild(rgCell);
+            newRow.appendChild(responsavelCell);
+            newRow.appendChild(paisCell);
+            newRow.appendChild(escolaCell);
+            newRow.appendChild(anoEscolarCell);
+            newRow.appendChild(turnoCell);
 
             tableBody.appendChild(newRow);
         });
