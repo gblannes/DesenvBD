@@ -186,19 +186,17 @@ button {
   font-family: "Roboto",sans-serif;
 }
 #filterBtn{
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   outline: 0;
   background: #0d6efd;
-  width: 20%;
   border: 0;
-  padding: 15px;
   color: #FFFFFF;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.5s ease;
-  cursor: pointer;
-  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
 }
 
 /*Página Login*/
