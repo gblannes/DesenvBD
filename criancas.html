@@ -20,30 +20,40 @@
         </ul>
     </div>
 </header>
-<div class="container">
-    <h2>Crianças Cadastradas:</h2>
+<div class="containerTab">
+    <div class="filtros">
+        <h2>Crianças Cadastradas:</h2>
+        <label for="filterName">Filtrar por Nome:</label>
+        <input type="text" id="filterName" placeholder="Digite o nome...">
+
+        <label for="filterBirthdate">Filtrar por Data de Nascimento:</label>
+        <input type="date" id="filterBirthdate">
+
+        <!-- Botão para Filtrar -->
+        <button id="filterBtn">Filtrar</button>
+    </div>
     <div class="tabela">
         <table id="dataTable">
             <thead>
                 <tr>
-                <th>Nome</th>
-                <th>Data de Nascimento</th>
-                <th>CPF</th>
-                <th>RG</th>
-                <th>Responsável</th>
-                <th>Pais</th>
-                <th>Escola</th>
-                <th>Ano</th>
-                <th>Turno</th>
+                    <th>Nome</th>
+                    <th>Data de Nascimento</th>
+                    <th>CPF</th>
+                    <th>RG</th>
+                    <th>Responsável</th>
+                    <th>Pai/Mãe</th>
+                    <th>Escola</th>
+                    <th>Ano</th>
+                    <th>Turno</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
-        <!-- As linhas serão adicionadas dinamicamente aqui -->
+            <!-- As linhas serão adicionadas dinamicamente aqui -->
             </tbody>
         </table>
     </div>
 </div>
-
 
 <script src="script.js"></script>
 </body>

@@ -19,29 +19,26 @@
             <li><a href="index.html">Sair</a></li>
         </ul>
     </div>
-</header>
-<!--TABELA-->
-    <div class="container">
-        <h2>Insira as informações da Criança:</h2>
-        <form id="dataForm">
-            <input type="text" id="nome" placeholder="Nome Completo" required>
-            <input type="date" id="nasc" placeholder="Data de Nascimento" required>
-            <input type="text" id="cpf" placeholder="CPF" required>
-            <input type="text" id="rg" placeholder="RG" required>
-            <input type="text" id="nomeResp" placeholder="Nome do responsável" required>
-            <input type="text" id="pais" placeholder="Pai ou Mãe" required>
-            <input type="text" id="escola" placeholder="Escola" required>
-            <input type="text" id="anoEscolar" placeholder="Ano escolar" required>
-            <input type="text" id="turno" placeholder="Turno" required>
-            <button type="submit">Adicionar</button>
-        </form>
-        <h2>Insira as informações do Responsável:</h2>
-        <form id="dataForm">
-        </form>
+  </header>
+  <!--TABELA-->
+  <div class="login-page">
+    <div class="formCad">
+      <form id="dataForm"> <!-- Alterado para id="dataForm" -->
+        <h2>Insira as informações das Crianças</h2>
+        <input type="text" id="nome" placeholder="Nome Completo" required>
+        <input type="date" id="nasc" placeholder="Data de Nascimento" required>
+        <input type="text" id="cpf" placeholder="CPF" required>
+        <input type="text" id="rg" placeholder="RG" required>
+        <input type="text" id="nomeResp" placeholder="Nome do responsável" required>
+        <input type="text" id="pais" placeholder="Pai ou Mãe" required>
+        <input type="text" id="escola" placeholder="Escola" required>
+        <input type="text" id="anoEscolar" placeholder="Ano escolar" required>
+        <input type="text" id="turno" placeholder="Turno" required>
+        <button id="botaoCad" type="submit">Adicionar</button>
+      </form>
     </div>
-
-
-
-    <script src="script.js"></script>
+  </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
